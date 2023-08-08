@@ -1,0 +1,18 @@
+version: '3'
+services:
+  terraform:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: curso-terraform
+    volumes:
+      - ${PWD}:/mnt/curso-terraform
+    stdin_open: true
+    tty: true
+    environment:
+      - AWS_ACCESS_KEY=${AWS_ACCESS_KEY}
+      - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+      - ARM_CLIENT_ID=${ARM_CLIENT_ID}
+      - ARM_TENANT_ID=${ARM_TENANT_ID}
+      - ARM_SUBSCRIPTION_ID=${ARM_SUBSCRIPTION_ID}
+      - ARM_CLIENT_SECRET=${ARM_CLIENT_SECRET}
