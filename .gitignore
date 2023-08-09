@@ -54,3 +54,4 @@ terraform.rc
 #Ignore ssh key
 **/aws-key
 **/*.pub
+**/azure-key
