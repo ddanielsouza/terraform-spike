@@ -50,3 +50,7 @@ terraform.rc
 #Ignore plan
 **/*.out
 *.out
+
+#Ignore ssh key
+**/aws-key
+**/*.pub
