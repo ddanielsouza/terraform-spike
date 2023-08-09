@@ -45,3 +45,8 @@ override.tf.json
 terraform.rc
 **/.terraformrc
 **/terraform.rc
+
+
+#Ignore plan
+**/*.out
+*.out
